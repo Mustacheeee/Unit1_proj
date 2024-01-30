@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2xe-Fa-yG6">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Character Fun Facts!-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="unit1Proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bfW-tE-bY5" userLabel="main Stack View">
+                                <rect key="frame" x="16" y="30" width="361" height="772"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bQl-94-Vnw" userLabel="img Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="551"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SpongeBob_SquarePants" translatesAutoresizingMaskIntoConstraints="NO" id="YhY-pX-xA2">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="551"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="lw5-Dx-whl" userLabel="manu Stack View">
+                                        <rect key="frame" x="114.00000000000001" y="551" width="133.33333333333337" height="221"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nsv-Tn-J1R" userLabel="Story Stack View">
+                                                <rect key="frame" x="13.33333333333335" y="0.0" width="106.66666666666669" height="34.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf6-qD-dUi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="34.333333333333336"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Back Story"/>
+                                                    </button>
+                                                </subviews>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="bBo-K5-cVf" appends="YES" id="ZBe-Nf-b29"/>
+                                                </connections>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ryC-vJ-L7X" userLabel="Neighborhood Stack View">
+                                                <rect key="frame" x="0.0" y="93.333333333333371" width="133.33333333333334" height="34.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAq-uc-E3n">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="34.333333333333336"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Neighborhood"/>
+                                                    </button>
+                                                </subviews>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="5r8-al-eip" appends="YES" id="EAq-a3-3uX"/>
+                                                </connections>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-18-won" userLabel="Job Stack View">
+                                                <rect key="frame" x="40.333333333333343" y="186.66666666666663" width="52.666666666666657" height="34.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-EK-cNO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="34.333333333333336"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Job"/>
+                                                    </button>
+                                                </subviews>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="72C-Tf-zHJ" appends="YES" id="NLm-hh-0rr"/>
+                                                </connections>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bfW-tE-bY5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="URK-oH-bf3"/>
+                            <constraint firstAttribute="trailing" secondItem="bfW-tE-bY5" secondAttribute="trailing" constant="16" id="ZrL-yZ-z62"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bfW-tE-bY5" secondAttribute="bottom" constant="16" id="drD-7X-DrQ"/>
+                            <constraint firstItem="bfW-tE-bY5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="ogb-HY-isI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Character Fun Facts!" id="Ar7-Lu-pip"/>
+                    <connections>
+                        <segue destination="0o9-x5-4d7" kind="show" identifier="detailSegue" id="FQz-OS-TkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bBo-K5-cVf">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="KdF-Bj-eWf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5r8-al-eip">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="CuK-hx-xSQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="72C-Tf-zHJ">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="gND-38-Kei"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="936.64122137404581" y="-27.464788732394368"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="k4v-sj-adp">
+            <objects>
+                <viewController id="0o9-x5-4d7" customClass="DetailViewController" customModule="unit1Proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M2B-yq-4Cm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fam-JY-vWi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IDx-Gs-aRx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWO-cU-jUv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eXf-g4-GrQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2xe-Fa-yG6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4CU-Nd-xtL">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="St8-A1-0xV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djS-Sl-opb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.9236641221374047" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SpongeBob_SquarePants" width="499" height="630"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
