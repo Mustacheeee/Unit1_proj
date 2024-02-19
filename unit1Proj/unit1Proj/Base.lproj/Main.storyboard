@@ -19,64 +19,38 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bfW-tE-bY5" userLabel="main Stack View">
                                 <rect key="frame" x="16" y="30" width="361" height="772"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bQl-94-Vnw" userLabel="img Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="551"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SpongeBob_SquarePants" translatesAutoresizingMaskIntoConstraints="NO" id="YhY-pX-xA2">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="551"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="lw5-Dx-whl" userLabel="manu Stack View">
-                                        <rect key="frame" x="114.00000000000001" y="551" width="133.33333333333337" height="221"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nsv-Tn-J1R" userLabel="Story Stack View">
-                                                <rect key="frame" x="13.33333333333335" y="0.0" width="106.66666666666669" height="34.333333333333336"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf6-qD-dUi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="34.333333333333336"/>
-                                                        <color key="tintColor" systemColor="labelColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Back Story"/>
-                                                    </button>
-                                                </subviews>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="bBo-K5-cVf" appends="YES" id="ZBe-Nf-b29"/>
-                                                </connections>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ryC-vJ-L7X" userLabel="Neighborhood Stack View">
-                                                <rect key="frame" x="0.0" y="93.333333333333371" width="133.33333333333334" height="34.333333333333343"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAq-uc-E3n">
-                                                        <rect key="frame" x="0.0" y="0.0" width="133.33333333333334" height="34.333333333333336"/>
-                                                        <color key="tintColor" systemColor="labelColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Neighborhood"/>
-                                                    </button>
-                                                </subviews>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="5r8-al-eip" appends="YES" id="EAq-a3-3uX"/>
-                                                </connections>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-18-won" userLabel="Job Stack View">
-                                                <rect key="frame" x="40.333333333333343" y="186.66666666666663" width="52.666666666666657" height="34.333333333333343"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-EK-cNO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="34.333333333333336"/>
-                                                        <color key="tintColor" systemColor="labelColor"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Job"/>
-                                                    </button>
-                                                </subviews>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="72C-Tf-zHJ" appends="YES" id="NLm-hh-0rr"/>
-                                                </connections>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpongeBob_SquarePants" translatesAutoresizingMaskIntoConstraints="NO" id="YhY-pX-xA2">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="630"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf6-qD-dUi">
+                                        <rect key="frame" x="127.33333333333334" y="630" width="106.66666666666666" height="34.333333333333371"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back Story"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="bBo-K5-cVf" appends="YES" id="Wwv-lX-xII"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAq-uc-E3n">
+                                        <rect key="frame" x="114.00000000000001" y="664.33333333333337" width="133.33333333333337" height="34.333333333333371"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Neighborhood"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5r8-al-eip" appends="YES" id="ZIL-oU-k8H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFC-EK-cNO">
+                                        <rect key="frame" x="154.33333333333334" y="698.66666666666663" width="52.666666666666657" height="73.333333333333371"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Job">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="72C-Tf-zHJ" appends="YES" id="ZHZ-RJ-hwt"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -85,12 +59,15 @@
                         <constraints>
                             <constraint firstItem="bfW-tE-bY5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="URK-oH-bf3"/>
                             <constraint firstAttribute="trailing" secondItem="bfW-tE-bY5" secondAttribute="trailing" constant="16" id="ZrL-yZ-z62"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bfW-tE-bY5" secondAttribute="bottom" constant="16" id="drD-7X-DrQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bfW-tE-bY5" secondAttribute="bottom" constant="16" id="b6t-rS-Ewu"/>
                             <constraint firstItem="bfW-tE-bY5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="ogb-HY-isI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Character Fun Facts!" id="Ar7-Lu-pip"/>
                     <connections>
+                        <outlet property="backstoryButton" destination="zf6-qD-dUi" id="dSC-jv-8go"/>
+                        <outlet property="jobButton" destination="fFC-EK-cNO" id="xLI-YX-PoR"/>
+                        <outlet property="neighbothoodButton" destination="kAq-uc-E3n" id="rbJ-CZ-GvW"/>
                         <segue destination="0o9-x5-4d7" kind="show" identifier="detailSegue" id="FQz-OS-TkL"/>
                     </connections>
                 </viewController>
@@ -102,32 +79,55 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="5r8-al-eip">
                     <connections>
-                        <action selector="didTap:" destination="BYZ-38-t0r" id="CuK-hx-xSQ"/>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="eR0-Bz-yMN"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="72C-Tf-zHJ">
                     <connections>
-                        <action selector="didTap:" destination="BYZ-38-t0r" id="gND-38-Kei"/>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="QbM-y2-V12"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="936.64122137404581" y="-27.464788732394368"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Details-->
         <scene sceneID="k4v-sj-adp">
             <objects>
-                <viewController id="0o9-x5-4d7" customClass="DetailViewController" customModule="unit1Proj" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0o9-x5-4d7" userLabel="Details" customClass="DetailViewController" customModule="unit1Proj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M2B-yq-4Cm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-Yx-4J1">
+                                <rect key="frame" x="50" y="133" width="293" height="655"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fam-JY-vWi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CQW-Yx-4J1" firstAttribute="leading" secondItem="fam-JY-vWi" secondAttribute="leading" constant="50" id="1R3-vr-05n"/>
+                            <constraint firstItem="fam-JY-vWi" firstAttribute="bottom" secondItem="CQW-Yx-4J1" secondAttribute="bottom" constant="30" id="NvQ-8C-4xg"/>
+                            <constraint firstItem="CQW-Yx-4J1" firstAttribute="top" secondItem="fam-JY-vWi" secondAttribute="top" constant="30" id="kAC-dB-k7l"/>
+                            <constraint firstItem="fam-JY-vWi" firstAttribute="trailing" secondItem="CQW-Yx-4J1" secondAttribute="trailing" constant="50" id="spL-2B-829"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IDx-Gs-aRx"/>
+                    <navigationItem key="navigationItem" title="Details" id="IDx-Gs-aRx"/>
+                    <connections>
+                        <outlet property="describtions" destination="CQW-Yx-4J1" id="szI-5Q-00Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWO-cU-jUv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="-27"/>
+            <point key="canvasLocation" x="1849.6183206106869" y="-27.464788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eXf-g4-GrQ">
