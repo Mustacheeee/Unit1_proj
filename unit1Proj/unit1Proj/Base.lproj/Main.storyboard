@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,6 +23,7 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="SpongeBob_SquarePants" translatesAutoresizingMaskIntoConstraints="NO" id="YhY-pX-xA2">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="630"/>
+                                        <color key="backgroundColor" name="launch-bg"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="ultraLight"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf6-qD-dUi">
@@ -55,10 +57,11 @@
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="5fX-Ca-olK"/>
+                                <color key="backgroundColor" name="launch-bg"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="bfW-tE-bY5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="URK-oH-bf3"/>
                             <constraint firstAttribute="trailing" secondItem="bfW-tE-bY5" secondAttribute="trailing" constant="16" id="ZrL-yZ-z62"/>
@@ -115,7 +118,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fam-JY-vWi"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="CQW-Yx-4J1" firstAttribute="leading" secondItem="fam-JY-vWi" secondAttribute="leading" constant="50" id="1R3-vr-05n"/>
                             <constraint firstItem="fam-JY-vWi" firstAttribute="bottom" secondItem="CQW-Yx-4J1" secondAttribute="bottom" constant="30" id="NvQ-8C-4xg"/>
@@ -153,11 +156,14 @@
     </scenes>
     <resources>
         <image name="SpongeBob_SquarePants" width="499" height="630"/>
+        <namedColor name="launch-bg">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
